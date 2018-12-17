@@ -1,0 +1,9 @@
+public Comparator<Map<String, String>> mapComparator = new Comparator<Map<String, String>>() {
+	    public int compare(Map<String, String> m1, Map<String, String> m2) {
+	        return m1.get("YMD").compareTo(m2.get("YMD"));
+	    }
+	};
+  
+  Collections.sort(list, mapComparator);
+  
+  list는 List<Map<String, String>
